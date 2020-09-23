@@ -1,0 +1,33 @@
+:root {
+    --hintergrund: #C7C7C7;
+    --helles-grau: #EAEAEA;
+    --dectris-blau: #004899;
+}
+
+.table-vbckantibaden {
+    color: white;
+    border-collapse: separate;
+    border-spacing: 0 10px; 
+    margin-top: -10px; /* correct offset on first border spacing if desired */
+ }
+
+ .table-vbckantibaden th,
+.table-vbckantibaden td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border:1px solid #004899;
+  border-style: solid none;
+  background-color: #004899;
+}
+
+.table-vbckantibaden td:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 0.25rem; 
+    border-bottom-left-radius: 0.25rem;
+}
+
+.table-vbckantibaden td:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 0.25rem; 
+    border-top-right-radius: 0.25rem; 
+}

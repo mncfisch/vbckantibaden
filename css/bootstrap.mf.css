@@ -26,7 +26,11 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
-  --breakpoint-xs: 0;
+  /*VBC Kanti Baden colors*/
+  --hintergrund: #C7C7C7;
+  --helles-grau: #EAEAEA;
+  --dectris-blau: #004899;
+    --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
@@ -60,7 +64,8 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: white;
+  background-image: url('file:///C:/Users/admin/Desktop/VBC Kanti Baden/bootstrap_vbckantibaden/images/backgd.gif');;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -1661,23 +1666,47 @@ pre code {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529;
+  color: white;
+  /*color: #212529;*/
+  /* Inserted by Moritz, not Bootstrap */
+  border-collapse: separate;
+  /*border-spacing: 3px;*/
+  /*border-radius: 3px;
+  border: none;*/
+  border-spacing: 0 10px; 
+  margin-top: -10px; /* correct offset on first border spacing if desired */
+  /* Inserted by Moritz, not Bootstrap */
 }
 
 .table th,
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #dee2e6;
+   border:1px solid #004899;
+  border-style: solid none;
+  background-color: #004899;
 }
 
-.table thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
+.table td:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 0.25rem; 
+    border-bottom-left-radius: 0.25rem;
+}
+
+.table td:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 0.25rem; 
+    border-top-right-radius: 0.25rem; 
 }
 
 .table tbody + tbody {
   border-top: 2px solid #dee2e6;
+    /* Inserted by Moritz, not Bootstrap 
+    border: none;
+    border-spacing: 3px;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 3px;*/
 }
 
 .table-sm th,
@@ -10255,5 +10284,38 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
-}
+  /*Added by Moritz, not Bootstrap*/
+  .table-curved {
+    border-collapse: collapse;
+  }
+  .table-curved th {
+    padding: 3px 10px;
+  }
+  .table-curved th:first-child {
+    padding: 6px;
+  }
+  .table-curved td {
+    background-color: #e5e5e5;
+    padding: 6px 10px;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+  }
+  .table-curved td:first-child {
+    padding: 6px;
+    border-radius: 8px 0 0 8px;
+    background-color: coral;
+  }
+  .table-curved td:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+  .table-curved tr:hover td:not(:first-child) {
+    background-color: #c5c5c5;
+  }
+  .table-curved tr.blue td:first-child {
+    background-color: cornflowerblue;
+  }
+  .table-curved tr.green td:first-child {
+    background-color: forestgreen;
+  }
+  }
 /*# sourceMappingURL=bootstrap.css.map */
