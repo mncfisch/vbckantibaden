@@ -60,7 +60,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #f6f6f6;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -1669,6 +1669,11 @@ pre code {
   padding: 0.75rem;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
+}
+
+td.min {
+  width: 1%;
+  white-space: nowrap;
 }
 
 .table thead th {
@@ -5249,7 +5254,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  background-color: #798999;
   border-radius: 0.3rem;
 }
 

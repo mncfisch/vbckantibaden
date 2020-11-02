@@ -1,33 +1,66 @@
 :root {
     --hintergrund: #C7C7C7;
-    --helles-grau: #EAEAEA;
-    --dectris-blau: #004899;
+    --hellesgrau: #EAEAEA;
+    --dectrisblau: #004899;
+    --oldbackground: #F5F2EE;
+    --white: #FFFFFF;
+    --schrift: #585858;
+    --nflgreybackground: #f6f6f6;
 }
 
-.table-vbckantibaden {
+.table-vbckb {
     color: white;
     border-collapse: separate;
-    border-spacing: 0 10px; 
+    border-spacing: 0 10px;
     margin-top: -10px; /* correct offset on first border spacing if desired */
+    /*vertical-align: middle;
+    height: 100%;*/
  }
 
- .table-vbckantibaden th,
-.table-vbckantibaden td {
-  padding: 0.75rem;
-  vertical-align: top;
-  border:1px solid #004899;
-  border-style: solid none;
-  background-color: #004899;
+ .table-vbckb th,
+ .table-vbckb td {
+  padding: 0.5rem;
+  vertical-align: middle;
+  /*border:1px solid --var(--dectrisblau);
+  border-style: solid none;*/
+  background-color: var(--white);
+  color: var(--schrift);
 }
 
-.table-vbckantibaden td:first-child {
+.table-vbckb td:first-child {
     border-left-style: solid;
     border-top-left-radius: 0.25rem; 
     border-bottom-left-radius: 0.25rem;
 }
 
-.table-vbckantibaden td:last-child {
+.table-vbckb td:last-child {
     border-right-style: solid;
     border-bottom-right-radius: 0.25rem; 
-    border-top-right-radius: 0.25rem; 
+    border-top-right-radius: 0.25rem;
+}
+
+tr.live-row td:first-child {
+  background-color: var(--dectrisblau);
+  color: var(--white);
+}
+
+tr.live-row td:last-child {
+  font-weight: bold;
+}
+
+.card-title-vbckb {
+  color: var(--dectrisblau);
+  margin-bottom: 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dectrisblau)
+}
+
+.jumbotron-vbckb {
+    background-color: var(--dectrisblau);
+  }
+
+.jumbotron-vbckb h1{
+    color: #fff;
 }
