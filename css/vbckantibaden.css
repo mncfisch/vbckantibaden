@@ -8,6 +8,10 @@
     --nflgreybackground: #f6f6f6;
 }
 
+body {
+  padding-top: 100px;
+}
+
 .table-vbckb {
     color: white;
     border-collapse: separate;
@@ -42,10 +46,39 @@
 tr.live-row td:first-child {
   background-color: var(--dectrisblau);
   color: var(--white);
+  width: 1%;
+  font-weight: bold;
+  /*width: 1%;
+  white-space: nowrap;*/
 }
 
 tr.live-row td:last-child {
   font-weight: bold;
+}
+
+tr.result-row td{
+  background-color: var(--dectrisblau);
+  color: var(--white);
+}
+
+tr.result-row td:last-child {
+  font-weight: bold;
+}
+
+/*td.min {
+  width: 1%;
+  white-space: nowrap;
+}*/
+
+.btn-vbckb {
+  color: #fff;
+  background-color: var(--dectrisblau);
+  border-color: var(--dectrisblau);
+}
+
+.btn-vbckb:hover {
+  color: var(--white);
+  text-decoration: none;
 }
 
 .card-title-vbckb {
