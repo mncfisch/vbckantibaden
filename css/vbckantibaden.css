@@ -9,7 +9,12 @@
 }
 
 body {
-  padding-top: 100px;
+  padding-top: 90px;
+}
+
+.footer-vbckb {
+  background-color: var(--dectrisblau);
+  color: #FFFFFF !important;
 }
 
 .table-vbckb {
