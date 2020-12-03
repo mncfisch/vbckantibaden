@@ -12,6 +12,17 @@ body {
   padding-top: 90px;
 }
 
+a {
+  color: var(--white);
+  background-color: var(--dectrisblau);
+}
+
+a:hover {
+  color: var(--dectrisblau);
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .footer-vbckb {
   background-color: var(--dectrisblau);
   color: #FFFFFF !important;
