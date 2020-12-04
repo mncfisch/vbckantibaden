@@ -12,6 +12,17 @@ body {
   padding-top: 90px;
 }
 
+#vbckb {
+  background-color: var(--dectrisblau);
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 a {
   color: var(--white);
   background-color: var(--dectrisblau);
@@ -112,4 +123,57 @@ h1, h2, h3, h4, h5, h6 {
 
 .jumbotron-vbckb h1{
     color: #fff;
+}
+
+body {margin:2rem;}
+
+
+
+/* HOVER SHADOW FÜR CARDS
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 544px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+
+}
+
+/* Medium devices (tablets, 768px and up) 
+The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+@media (max-width: 950px) { 
+
 }
